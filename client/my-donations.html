@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodBridge - My Donations</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">FoodBridge</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="donor.html">Back to Donor Portal</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>My <span>Donations</span></h1>
+        <p>View the food donations you have submitted.</p>
+    </section>
+
+    <h2 id="donationCount" style="text-align: center; margin: 20px 0;">
+        Total Donations: 0
+    </h2>
+
+    <h3 id="availableCount" style="text-align: center; margin: 10px 0;">
+        Available Donations: 0
+    </h3>
+
+    <h3 id="reservedCount" style="text-align: center; margin: 10px 0;">
+        Reserved Donations: 0
+    </h3>
+
+    <h3 id="totalQuantity" style="text-align: center; margin: 10px 0;">
+        Total Food Donated: 0 kg
+    </h3>
+
+
+<div style="text-align: center; margin: 25px 0;">
+    <button type="button" class="donation-filter" data-filter="All">
+        All Donations
+    </button>
+
+    <button type="button" class="donation-filter" data-filter="Available">
+        Available
+    </button>
+
+    <button type="button" class="donation-filter" data-filter="Reserved">
+        Reserved
+    </button>
+
+    <button type="button" class="donation-filter" data-filter="Expired">
+        Expired
+    </button>
+</div>
+
+<section id="donationsList" class="portal-container"></section>
+    
+
+    <div style="text-align: center; margin: 20px;">
+        <a href="donate.html" class="btn">Donate Food</a>
+    </div>
+
+    <div style="text-align: center; margin: 20px;">
+        <button id="clearDonationsButton" type="button">
+            Clear Test Donations
+        </button>
+    </div>
+
+</body>
+</html>

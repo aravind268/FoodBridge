@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodBridge - NGO Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>FoodBridge</h2>
+        <div>
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>NGO / Receiver Portal</h1>
+        <p>Find available food donations and help people in need.</p>
+    </section>
+
+    <section class="portal-container">
+
+        <div class="portal-card">
+            <h2>Available Food Donations</h2>
+
+            <label for="ngoName">NGO Name:</label>
+            <input
+                type="text"
+                id="ngoName"
+                placeholder="Enter your NGO name..."
+                required
+                style="display:block;width:80%;max-width:500px;margin:15px auto;padding:12px;"
+            >
+
+            <label for="ngoPhone">NGO Phone Number:</label>
+            <input
+                type="tel"
+                id="ngoPhone"
+                placeholder="Enter 10-digit mobile number"
+                pattern="[6-9][0-9]{9}"
+                maxlength="10"
+                required
+                style="display:block;width:80%;max-width:500px;margin:15px auto;padding:12px;"
+            >
+
+            <label for="ngoAddress">NGO Delivery Address:</label>
+            <input
+                type="text"
+                id="ngoAddress"
+                placeholder="Enter the food delivery address"
+                required
+                style="display:block;width:80%;max-width:500px;margin:15px auto;padding:12px;"
+            >
+
+            <p>Browse food donations that are ready for pickup.</p>
+        </div>
+
+        <input
+            type="text"
+            id="ngoSearch"
+            placeholder="Search food by name..."
+            style="display:block;width:80%;max-width:500px;margin:20px auto;padding:12px;"
+        >
+
+        <div style="text-align:center;margin:20px;">
+            <button type="button" id="findNearbyButton">
+                Find Food Near Me
+            </button>
+
+            <p id="nearbyStatus">
+                Allow location access to find the nearest food donations.
+            </p>
+        </div>
+
+        <div style="text-align:center;margin:15px;">
+            <label for="ngoSort">Sort donations:</label>
+
+            <select id="ngoSort" style="padding:10px;margin-left:8px;">
+                <option value="deadline">Pickup deadline (Soonest first)</option>
+                <option value="name">Food name (A–Z)</option>
+                <option value="quantity">Quantity (Highest first)</option>
+                <option value="distance">Distance (Nearest first)</option>
+            </select>
+        </div>
+
+        <div id="ngoDonationsList" class="portal-container"></div>
+
+    </section>
+
+</body>
+</html>

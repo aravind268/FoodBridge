@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodBridge - Admin Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>FoodBridge Admin</h2>
+        <div>
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Admin Dashboard</h1>
+        <p>Monitor donations and track the food rescue process.</p>
+    </section>
+
+    <main class="portal-container">
+        <div class="portal-card">
+            <h2>Donation Statistics</h2>
+
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Total Donations</h3>
+                    <p id="adminTotal">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Available</h3>
+                    <p id="adminAvailable">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Reserved</h3>
+                    <p id="adminReserved">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Collected</h3>
+                    <p id="adminCollected">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Delivered</h3>
+                    <p id="adminDelivered">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Expired</h3>
+                    <p id="adminExpired">0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="portal-card">
+            <h2>Manage Donations</h2>
+
+            <input
+                type="text"
+                id="adminSearch"
+                placeholder="Search food or restaurant..."
+            >
+
+            <select id="adminStatusFilter">
+                <option value="all">All statuses</option>
+                <option value="Available">Available</option>
+                <option value="Reserved">Reserved</option>
+                <option value="Collected">Collected</option>
+                <option value="Delivered">Delivered</option>
+                <option value="Expired">Expired</option>
+            >
+
+            </select>
+
+            <button type="button" id="adminRefresh">
+                Refresh Dashboard
+            </button>
+            <button type="button" id="adminExport">
+    Export Donations CSV
+</button>
+            <div id="adminMessage" role="status"></div>
+            <div id="adminDonationsList"></div>
+        </div>
+    </main>
+
+</body>
+</html>
