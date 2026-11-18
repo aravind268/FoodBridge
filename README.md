@@ -70,6 +70,8 @@ FoodBridge/
 
 │   └── package.json
 
+├── screenshots/            # Project screenshots
+
 ├── server/                 # Node.js and Express backend
 
 │   ├── middleware/
@@ -174,7 +176,7 @@ The backend runs at:
 
 
 
-Open another terminal:
+Open another terminal from the FoodBridge project folder:
 
 
 
@@ -276,11 +278,15 @@ GitHub: \[aravind268](https://github.com/aravind268)
 
 \### 1. Homepage
 
+
+
 !\[FoodBridge Homepage](screenshots/homepage.jpeg)
 
 
 
 \### 2. Donor Dashboard
+
+
 
 !\[Donor Dashboard](screenshots/donor-dashboard.jpeg)
 
@@ -288,11 +294,15 @@ GitHub: \[aravind268](https://github.com/aravind268)
 
 \### 3. NGO Dashboard
 
+
+
 !\[NGO Dashboard](screenshots/ngo-dashboard.jpeg)
 
 
 
 \### 4. Volunteer Dashboard
+
+
 
 !\[Volunteer Dashboard](screenshots/volunteer-dashboard.jpeg)
 
@@ -300,5 +310,9 @@ GitHub: \[aravind268](https://github.com/aravind268)
 
 \### 5. Admin Dashboard
 
+
+
 !\[Admin Dashboard](screenshots/admin-dashboard.jpeg)
+
+
 
