@@ -268,3 +268,37 @@ GitHub: \[aravind268](https://github.com/aravind268)
 
 \[FoodBridge – GitHub](https://github.com/aravind268/FoodBridge)
 
+
+
+\## 📸 Project Screenshots
+
+
+
+\### 1. Homepage
+
+!\[FoodBridge Homepage](screenshots/homepage.jpeg)
+
+
+
+\### 2. Donor Dashboard
+
+!\[Donor Dashboard](screenshots/donor-dashboard.jpeg)
+
+
+
+\### 3. NGO Dashboard
+
+!\[NGO Dashboard](screenshots/ngo-dashboard.jpeg)
+
+
+
+\### 4. Volunteer Dashboard
+
+!\[Volunteer Dashboard](screenshots/volunteer-dashboard.jpeg)
+
+
+
+\### 5. Admin Dashboard
+
+!\[Admin Dashboard](screenshots/admin-dashboard.jpeg)
+
