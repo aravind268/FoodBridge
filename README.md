@@ -180,7 +180,7 @@ Open another terminal:
 
 ```bash
 
-cd FoodBridge/client-react
+cd client-react
 
 npm install
 
